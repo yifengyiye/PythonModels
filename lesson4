@@ -1,0 +1,21 @@
+#coding:utf-8
+
+#定义changeme()函数：此函数用于在原有的mylist数组后面添加新的数据内容
+def changeme(mylist):
+    # mylist.append(1,2,3,4,5,6,7,8,9)
+    mylist.append([1,2,3])
+    mylist.append(3)
+    mylist.append('name')
+    mylist.append((1,2,3,4))
+    print "函数内取值：",mylist
+    return
+
+# 调用changeme函数
+mylist = [10,20,30];
+changeme(mylist);
+
+mylist = [110,120,119,114,10086];
+print "函数外取值: ", changeme(mylist);
+#传入函数的和在末尾添加新内容的对象用的是同一个引用。故输出结果如下：
+#函数内取值:  [10, 20, 30, [1, 2, 3, 4]]
+#函数外取值:  [10, 20, 30, [1, 2, 3, 4]]
