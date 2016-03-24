@@ -1,0 +1,7 @@
+#coding:utf-8
+# import os
+
+#python读取txt数据
+f = open("F://file.txt","r")
+for  x in f:
+	print x
